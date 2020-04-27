@@ -26,7 +26,7 @@ Log data json path: ``s3://udacity-dend/log_json_path.json``
 
 ### ``dwh.cfg``
 
-<p align=justify>Configuration file containing .</p>
+<p align=justify>Configuration file containing a series of default values to create the necessary Redshift cluster and IAM roles. The AWS key ans secret key entries are empty to fill in by the user. NOTE: Never share that information publicly.</p>
 
 ### ``sql_queries.py``
 
@@ -50,5 +50,14 @@ Log data json path: ``s3://udacity-dend/log_json_path.json``
 
 ## Running the Code
 
+### 1. Fill in the configuration file with your AWS access key and secret key.
 
+### 2. Run the following scripts on the command line.
 
+    $python3 create_cluster.py
+    $python3 create_tables.py
+    $python3 etl.py
+    
+### Optional: visualize the optimization info running the followinf script on the command line.
+
+    $python3 optimize.py
