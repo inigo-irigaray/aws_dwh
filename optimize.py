@@ -8,6 +8,8 @@ from sql_queries import optimization_queries
 
 
 def optim_stats(cur, conn):
+    """Prints information about the fact and dimension tables to better design a dist and sort
+    key strategy."""
     for query in optimization_queries:
         print("\n\n")
         cur.execute(query)        
