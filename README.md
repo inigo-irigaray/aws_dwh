@@ -26,7 +26,7 @@ Log data json path: ``s3://udacity-dend/log_json_path.json``
 
 ### ``dwh.cfg``
 
-<p align=justify>Configuration file containing a series of default values to create the necessary Redshift cluster and IAM roles. The AWS key ans secret key entries are empty to fill in by the user. NOTE: Never share that information publicly.</p>
+<p align=justify>Configuration file containing a series of default values to create the necessary Redshift cluster and IAM roles. The AWS key and secret key entries are empty to fill in by the user. NOTE: Never share that information publicly.</p>
 
 ### ``sql_queries.py``
 
